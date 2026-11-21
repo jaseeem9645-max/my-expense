@@ -1,0 +1,243 @@
+
+/* GLOBAL DARK THEME FIX */
+
+html,
+body {
+  background: #101114 !important;
+  color: #f5f5f5 !important;
+  margin: 0;
+  min-height: 100%;
+}
+
+main {
+  background: #101114 !important;
+  color: #f5f5f5 !important;
+}
+
+h1, h2, h3, p, label {
+  color: inherit;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-section,
+.search-section {
+  color: #f5f5f5;
+}
+
+.report-section {
+  background: #1b1c20;
+}
+
+/* My Expense Premium Form */
+
+.form-section,
+.search-section,
+.report-section {
+  margin-top: 30px;
+}
+
+.form-section h3,
+.search-section h3,
+.report-section h3 {
+  color: #e9c477;
+  font-size: 19px;
+  margin-bottom: 16px;
+}
+
+#expense-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#expense-form input,
+#expense-form select,
+#search {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  background: #202126;
+  color: white;
+  border: 1px solid #393a40;
+  border-radius: 12px;
+  font-size: 15px;
+}
+
+#expense-form button {
+  padding: 16px;
+  background: linear-gradient(135deg, #e9c477, #b58a40);
+  color: #17130b;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.report-section {
+  padding: 20px;
+  background: #1b1c20;
+  border: 1px solid #393a40;
+  border-radius: 16px;
+}
+
+.report-section p {
+  display: flex;
+  justify-content: space-between;
+  color: #ccc;
+  margin-top: 12px;
+}
+
+.report-section strong {
+  color: #e9c477;
+}
+
+.transaction-actions {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.transaction-actions button {
+  flex: 1;
+  padding: 10px;
+  background: #29251e;
+  color: #e9c477;
+  border: 1px solid #75603a;
+  border-radius: 9px;
+}
+
+/* ===== PREMIUM DASHBOARD DESIGN ===== */
+
+/* Main layout */
+#app {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+}
+
+/* Header */
+header {
+  padding: 38px 30px 24px;
+}
+
+header h2 {
+  color: #e9c477 !important;
+  font-size: 34px;
+  font-weight: 800;
+  margin: 0 0 8px;
+  letter-spacing: -1px;
+}
+
+header p {
+  color: #999 !important;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Main content */
+main {
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+/* Balance card */
+.balance-card {
+  background: linear-gradient(
+    145deg,
+    #24221e,
+    #191817
+  ) !important;
+
+  border: 1px solid #796440;
+  border-radius: 36px;
+  padding: 40px 38px;
+  margin: 28px 0 42px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+}
+
+.balance-card > p {
+  color: #c7bca7 !important;
+  font-size: 17px;
+  margin: 0 0 24px;
+}
+
+.balance-card > h1 {
+  color: #f0cc7c !important;
+  font-size: 46px;
+  font-weight: 800;
+  margin: 0 0 48px;
+  letter-spacing: -1px;
+}
+
+/* Income and Expense summary */
+.balance-card .summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #514735;
+  padding-top: 32px;
+  gap: 15px;
+}
+
+.summary > div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.summary span {
+  color: #aaa !important;
+  font-size: 14px;
+}
+
+.summary h3 {
+  color: #fff !important;
+  font-size: 23px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Recent transactions */
+.transactions {
+  margin-top: 35px;
+}
+
+.transactions > h3 {
+  color: #fff !important;
+  font-size: 21px;
+  margin-bottom: 25px;
+}
+
+#transaction-list {
+  background: #1b1c20;
+  border-radius: 24px;
+  padding: 24px;
+  color: #aaa;
+  text-align: center;
+}
+
+/* Small screen adjustment */
+@media (max-width: 380px) {
+  header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .balance-card {
+    padding: 30px 24px;
+  }
+
+  .balance-card > h1 {
+    font-size: 38px;
+  }
+}

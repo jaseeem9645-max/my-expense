@@ -1,0 +1,47 @@
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="512" height="512"
+     viewBox="0 0 512 512">
+
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe49a"/>
+      <stop offset="100%" stop-color="#b98528"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#29251e"/>
+      <stop offset="100%" stop-color="#08090b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="110" fill="url(#bg)"/>
+
+  <rect x="5" y="5" width="502" height="502"
+        rx="105" fill="none"
+        stroke="url(#gold)" stroke-width="8"/>
+
+  <path d="M110 185 L110 150 Q110 120 140 120
+           L350 120 Q380 120 380 150
+           L380 335 Q380 365 350 365
+           L140 365 Q110 365 110 335 Z"
+        fill="url(#gold)"/>
+
+  <path d="M110 185 L380 185"
+        stroke="#17130b" stroke-width="12"/>
+
+  <path d="M110 225 L380 225"
+        stroke="#17130b" stroke-width="5" opacity=".4"/>
+
+  <rect x="280" y="235" width="125" height="90"
+        rx="25" fill="#17130b"
+        stroke="#f0cc7c" stroke-width="8"/>
+
+  <circle cx="310" cy="280" r="12" fill="#f0cc7c"/>
+
+  <text x="245" y="445"
+        font-family="Arial, sans-serif"
+        font-size="42" font-weight="bold"
+        fill="url(#gold)" text-anchor="middle">
+    MY EXPENSE
+  </text>
+</svg>
