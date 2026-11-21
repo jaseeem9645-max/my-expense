@@ -1,8 +1,18 @@
 const KEY = "myExpenseTransactions";
 
-let transactions = JSON.parse(
-  localStorage.getItem(KEY) || "[]"
-);
+let transactions = [];
+
+try {
+  const saved = localStorage.getItem(KEY);
+  transactions = saved ? JSON.parse(saved) : [];
+
+  if (!Array.isArray(transactions)) {
+    transactions = [];
+  }
+} catch (error) {
+  transactions = [];
+}
+
 let editingId = null;
 
 const money = n => new Intl.NumberFormat("en-IN", {
