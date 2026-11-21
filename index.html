@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101114">
+  <title>My Expense</title>
+  <link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="app">
+    <header>
+      <h2>My Expense</h2>
+      <p>Personal Finance Tracker</p>
+    </header>
+
+    <main>
+      <section class="balance-card">
+        <p>Available Balance</p>
+        <h1 id="balance">₹0.00</h1>
+        <div class="summary">
+          <div>
+            <span>Income</span>
+            <h3 id="income">₹0</h3>
+          </div>
+          <div>
+            <span>Expense</span>
+            <h3 id="expense">₹0</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="transactions">
+        <h3>Recent Transactions</h3>
+        <div id="transaction-list">
+          No transactions yet.
+        </div>
+      </section>
+    </main>
+  </div>
+
+  
+<script src="script.js"></script>
+
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("./sw.js")
+      .then(() => {
+        console.log("Offline support enabled!");
+      })
+      .catch((error) => {
+        console.error("Service Worker Error:", error);
+      });
+  });
+}
+</script>
+
+</body>
+</html>
